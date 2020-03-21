@@ -7,5 +7,6 @@ Just some powershell scripts to do things.
 
 ### Run these remotely in PowerShell using Invoke-WebRequest like this
 
+```powershell
 $ScriptFromGitHub = Invoke-WebRequest https://github.com/theCMack/powershell_scripts/blob/master/MapWindowsDiskstoVolumes.ps1
 Invoke-Expression $($ScriptFromGitHub.Content)
