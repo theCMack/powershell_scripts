@@ -8,5 +8,6 @@ Just some powershell scripts to do things.
 ### Run these remotely in PowerShell using Invoke-WebRequest like this
 
 ```powershell
-$ScriptFromGitHub = Invoke-WebRequest https://github.com/theCMack/powershell_scripts/blob/master/MapWindowsDiskstoVolumes.ps1
+[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
+$ScriptFromGitHub = Invoke-WebRequest https://raw.githubusercontent.com/theCMack/powershell_scripts/master/MapWindowsDiskstoVolumes.ps1 -UseBasicParsing
 Invoke-Expression $($ScriptFromGitHub.Content)
