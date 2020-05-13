@@ -2,7 +2,10 @@
 Just some powershell scripts to do things.
 
 - MapWindowsDiskstoVolumes.ps1
-  - This will map the Windows Disks to the AWS VolumeIds 
+  - This will map the Windows Disks to the AWS VolumeIds
+- ebsnvme-id.zip (ebsnvme-id.exe)
+  - Will map nvme on Windows 2008 and newer
+  - https://docs.aws.amazon.com/AWSEC2/latest/WindowsGuide/nvme-ebs-volumes.html
 
 
 ### Run these remotely in PowerShell using Invoke-WebRequest like this
